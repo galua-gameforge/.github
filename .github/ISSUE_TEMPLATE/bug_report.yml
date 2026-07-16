@@ -1,111 +1,111 @@
-name: Сообщение об ошибке
-description: Сообщите о воспроизводимой ошибке в игре или библиотеке
-title: "[Ошибка]: "
+name: Bug report
+description: Report a reproducible bug in a game or library
+title: "[Bug]: "
 body:
   - type: markdown
     attributes:
       value: |
-        Спасибо, что помогаете улучшать проекты galua-gameforge
+        Thank you for helping improve galua-gameforge projects
 
-        Перед созданием задачи проверьте существующие задачи и убедитесь, что ошибка ещё не описана
+        Before opening an issue, search existing issues and make sure the bug has not already been reported
 
   - type: dropdown
     id: project_type
     attributes:
-      label: Тип проекта
-      description: Укажите, где обнаружена ошибка
+      label: Project type
+      description: Specify where the bug was found
       options:
-        - Игра
-        - Библиотека
-        - Общая инфраструктура
+        - Game
+        - Library
+        - Shared infrastructure
     validations:
       required: true
 
   - type: textarea
     id: summary
     attributes:
-      label: Краткое описание
-      description: Опишите проблему и её влияние на пользователя или разработчика
-      placeholder: Что произошло и почему это является ошибкой
+      label: Summary
+      description: Describe the problem and its impact on users or developers
+      placeholder: What happened and why it is a bug
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: Шаги для воспроизведения
-      description: Перечислите минимальную последовательность действий, которая приводит к ошибке
+      label: Steps to reproduce
+      description: List the minimal sequence of actions that causes the bug
       placeholder: |
-        1. Открыть ...
-        2. Нажать ...
-        3. Увидеть ...
+        1. Open ...
+        2. Click ...
+        3. Observe ...
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: Ожидаемое поведение
-      description: Опишите, что должно было произойти
+      label: Expected behavior
+      description: Describe what should have happened
     validations:
       required: true
 
   - type: textarea
     id: actual
     attributes:
-      label: Фактическое поведение
-      description: Опишите, что произошло на самом деле
+      label: Actual behavior
+      description: Describe what actually happened
     validations:
       required: true
 
   - type: dropdown
     id: area
     attributes:
-      label: Область
-      description: Выберите наиболее подходящую часть проекта
+      label: Area
+      description: Select the most relevant part of the project
       multiple: true
       options:
-        - Игровая механика
-        - Бонусы и баланс
-        - Интерфейс и управление
-        - Локализация и ресурсы
-        - Интеграция с Яндекс Играми
-        - Публичный API библиотеки
-        - Сборка и выпуск
-        - Документация
-        - Другое
+        - Game mechanics
+        - Bonuses and balance
+        - Interface and controls
+        - Localization and resources
+        - Yandex Games integration
+        - Library public API
+        - Build and release
+        - Documentation
+        - Other
     validations:
       required: true
 
   - type: input
     id: version
     attributes:
-      label: Версия
-      description: Укажите версию релиза, пакета или хеш коммита
-      placeholder: Например, v1.2.0 или 1a2b3c4
+      label: Version
+      description: Specify the release version, package version, or commit hash
+      placeholder: For example, v1.2.0 or 1a2b3c4
 
   - type: textarea
     id: environment
     attributes:
-      label: Окружение
-      description: Укажите ОС, браузер или версию Node.js и другие важные сведения
-      placeholder: macOS 15, Chrome 138 или Node.js 22
+      label: Environment
+      description: Specify the OS, browser or Node.js version, and other relevant details
+      placeholder: macOS 15, Chrome 138, or Node.js 22
     validations:
       required: true
 
   - type: textarea
     id: logs
     attributes:
-      label: Логи и дополнительные материалы
-      description: Добавьте текст ошибки, логи, скриншоты или ссылку на минимальный пример
+      label: Logs and additional materials
+      description: Add the error message, logs, screenshots, or a link to a minimal reproduction
       render: shell
 
   - type: checkboxes
     id: checks
     attributes:
-      label: Предварительная проверка
+      label: Pre-submission checklist
       options:
-        - label: Я проверил существующие задачи и не нашёл дубликат
+        - label: I searched existing issues and found no duplicate
           required: true
-        - label: Я удалил из логов секреты, токены и персональные данные
+        - label: I removed secrets, tokens, and personal data from the logs
           required: true

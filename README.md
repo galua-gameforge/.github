@@ -1,30 +1,30 @@
-# Общие настройки galua-gameforge
+# Shared galua-gameforge configuration
 
-Репозиторий содержит общие шаблоны сообщества для проектов организации
-[galua-gameforge](https://github.com/galua-gameforge)
+This repository contains shared community templates for projects in the
+[galua-gameforge](https://github.com/galua-gameforge) organization
 
-GitHub автоматически использует эти файлы в репозиториях организации, если в
-целевом репозитории нет собственного шаблона соответствующего типа
+GitHub automatically uses these files in organization repositories when the
+target repository does not provide its own template of the corresponding type
 
-## Содержание
+## Contents
 
-- [Шаблон сообщения об ошибке](.github/ISSUE_TEMPLATE/bug_report.yml)
-- [Шаблон предложения](.github/ISSUE_TEMPLATE/feature_request.yml)
-- [Настройки создания задач](.github/ISSUE_TEMPLATE/config.yml)
-- [Шаблон pull request](.github/pull_request_template.md)
+- [Bug report template](.github/ISSUE_TEMPLATE/bug_report.yml)
+- [Feature request template](.github/ISSUE_TEMPLATE/feature_request.yml)
+- [Issue creation settings](.github/ISSUE_TEMPLATE/config.yml)
+- [Pull request template](.github/pull_request_template.md)
 
-## Как работает наследование
+## How inheritance works
 
-Общие шаблоны применяются автоматически и не копируются в историю дочерних
-репозиториев. Локальный файл с тем же назначением имеет приоритет над общим
+Shared templates are applied automatically and are not copied into child
+repository history. A local file serving the same purpose takes precedence
 
-Для issue-форм действует дополнительное правило: если в дочернем репозитории
-существует каталог `.github/ISSUE_TEMPLATE` с любым файлом конфигурации или
-шаблоном, GitHub не наследует общие файлы из этого каталога
+Issue forms have an additional rule: when a child repository contains a
+`.github/ISSUE_TEMPLATE` directory with any configuration file or template,
+GitHub does not inherit shared files from that directory
 
-## Изменение шаблонов
+## Updating templates
 
-1. Создайте отдельную ветку
-2. Внесите изменение в общий шаблон
-3. Проверьте корректность YAML и Markdown
-4. Откройте pull request с описанием влияния на игры и библиотеки
+1. Create a separate branch
+2. Update the shared template
+3. Validate the YAML and Markdown
+4. Open a pull request describing the impact on games and libraries

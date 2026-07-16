@@ -1,95 +1,95 @@
-name: Предложение по улучшению
-description: Предложите новую возможность или улучшение игры, библиотеки либо инфраструктуры
-title: "[Предложение]: "
+name: Feature request
+description: Suggest a new feature or an improvement to a game, library, or infrastructure
+title: "[Feature]: "
 body:
   - type: markdown
     attributes:
       value: |
-        Опишите задачу с точки зрения пользы и ожидаемого результата
+        Describe the request in terms of its value and expected outcome
 
-        Перед созданием предложения проверьте, что похожая задача ещё не существует
+        Before submitting a request, make sure a similar issue does not already exist
 
   - type: dropdown
     id: project_type
     attributes:
-      label: Тип проекта
+      label: Project type
       options:
-        - Игра
-        - Библиотека
-        - Общая инфраструктура
+        - Game
+        - Library
+        - Shared infrastructure
     validations:
       required: true
 
   - type: textarea
     id: problem
     attributes:
-      label: Проблема
-      description: Какую потребность пользователя или разработчика должно закрыть изменение
-      placeholder: Сейчас сложно или невозможно ...
+      label: Problem
+      description: What user or developer need should this change address?
+      placeholder: It is currently difficult or impossible to ...
     validations:
       required: true
 
   - type: textarea
     id: proposal
     attributes:
-      label: Предлагаемое решение
-      description: Опишите желаемое поведение и основной сценарий использования
+      label: Proposed solution
+      description: Describe the desired behavior and primary use case
     validations:
       required: true
 
   - type: dropdown
     id: area
     attributes:
-      label: Область
+      label: Area
       multiple: true
       options:
-        - Игровая механика
-        - Бонусы и баланс
-        - Интерфейс и управление
-        - Локализация и ресурсы
-        - Интеграция с Яндекс Играми
-        - Публичный API библиотеки
-        - Сборка и выпуск
-        - Документация
-        - Другое
+        - Game mechanics
+        - Bonuses and balance
+        - Interface and controls
+        - Localization and resources
+        - Yandex Games integration
+        - Library public API
+        - Build and release
+        - Documentation
+        - Other
     validations:
       required: true
 
   - type: textarea
     id: example
     attributes:
-      label: Пример использования
-      description: При необходимости добавьте пример интерфейса, кода, ресурсного файла или пользовательского сценария
+      label: Usage example
+      description: If useful, add an interface, code, resource file, or user-flow example
       render: text
 
   - type: textarea
     id: alternatives
     attributes:
-      label: Рассмотренные альтернативы
-      description: Какие другие варианты вы рассматривали и почему они не подходят
+      label: Alternatives considered
+      description: What other options did you consider, and why are they unsuitable?
 
   - type: textarea
     id: acceptance
     attributes:
-      label: Критерии готовности
-      description: Перечислите проверяемые условия, по которым можно принять результат
+      label: Acceptance criteria
+      description: List verifiable conditions that must be met to accept the result
       placeholder: |
-        - [ ] Реализован основной сценарий
-        - [ ] Добавлены или обновлены тесты
-        - [ ] Обновлена документация
+        - [ ] The primary use case is implemented
+        - [ ] Tests are added or updated
+        - [ ] Documentation is updated
     validations:
       required: true
 
   - type: textarea
     id: context
     attributes:
-      label: Дополнительный контекст
-      description: Добавьте ссылки, макеты, скриншоты или связанные задачи
+      label: Additional context
+      description: Add links, mockups, screenshots, or related issues
 
   - type: checkboxes
     id: checks
     attributes:
-      label: Предварительная проверка
+      label: Pre-submission checklist
       options:
-        - label: Я проверил существующие задачи и не нашёл дубликат
+        - label: I searched existing issues and found no duplicate
           required: true

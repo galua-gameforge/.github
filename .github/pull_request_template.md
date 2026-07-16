@@ -1,52 +1,52 @@
-## Краткое описание
+## Summary
 
-<!-- Что изменено и какую проблему решает pull request -->
+<!-- What changed, and what problem does this pull request solve? -->
 
-## Тип проекта
+## Project type
 
-- [ ] Игра
-- [ ] Библиотека
-- [ ] Общая инфраструктура
+- [ ] Game
+- [ ] Library
+- [ ] Shared infrastructure
 
-## Тип изменения
+## Change type
 
-- [ ] Исправление ошибки
-- [ ] Новая возможность
-- [ ] Изменение игровой механики или баланса
-- [ ] Изменение публичного API
-- [ ] Локализация или ресурсные файлы
-- [ ] Сборка, выпуск или CI
-- [ ] Рефакторинг
-- [ ] Документация
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Game mechanics or balance change
+- [ ] Public API change
+- [ ] Localization or resource files
+- [ ] Build, release, or CI
+- [ ] Refactoring
+- [ ] Documentation
 
-## Как проверить
+## How to verify
 
-<!-- Опишите команды и ручные сценарии проверки -->
+<!-- Describe verification commands and manual test scenarios -->
 
 1.
 2.
 3.
 
-## Проверки
+## Checks
 
-- [ ] Изменение ограничено заявленной задачей
-- [ ] Линтер проходит успешно
-- [ ] Проверка форматирования проходит успешно
-- [ ] Тесты добавлены или обновлены и проходят успешно
-- [ ] Проект собирается без ошибок
-- [ ] Для игры проверены затронутые сценарии вручную
-- [ ] Для локализации проверены русская и английская локали
-- [ ] Документация обновлена при необходимости
-- [ ] В изменениях нет секретов, токенов и персональных данных
+- [ ] The change is limited to the stated task
+- [ ] The linter passes
+- [ ] The formatting check passes
+- [ ] Tests are added or updated and pass
+- [ ] The project builds successfully
+- [ ] Affected game scenarios were verified manually
+- [ ] Russian and English locales were verified for localization changes
+- [ ] Documentation was updated where necessary
+- [ ] The changes contain no secrets, tokens, or personal data
 
-## Скриншоты или видео
+## Screenshots or videos
 
-<!-- Добавьте материалы для визуальных изменений либо удалите этот раздел -->
+<!-- Add materials for visual changes, or remove this section -->
 
-## Влияние на выпуск
+## Release impact
 
-<!-- Нужна ли новая версия пакета или релиз игры, есть ли несовместимые изменения -->
+<!-- Is a new package version or game release required? Are there breaking changes? -->
 
-## Дополнительные сведения
+## Additional information
 
-<!-- Связанные задачи, ограничения и важные решения -->
+<!-- Related issues, constraints, and important decisions -->

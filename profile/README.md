@@ -1,9 +1,9 @@
 # galua-gameforge
 
-Мы разрабатываем браузерные игры для компьютеров и мобильных устройств
+We develop browser games for desktop and mobile devices
 
-Игры работают в современных браузерах и интегрируются с платформой Яндекс.Игры
+The games run in modern browsers and integrate with the Yandex Games platform
 
-## Технологии
+## Technologies
 
 `TypeScript` · `Phaser` · `Vite` · `Node.js` · `Yandex Games SDK`
