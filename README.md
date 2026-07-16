@@ -1,7 +1,7 @@
-# Общие настройки Galua Gameforge
+# Общие настройки galua-gameforge
 
 Репозиторий содержит общие шаблоны сообщества для проектов организации
-[Galua Gameforge](https://github.com/galua-gameforge)
+[galua-gameforge](https://github.com/galua-gameforge)
 
 GitHub автоматически использует эти файлы в репозиториях организации, если в
 целевом репозитории нет собственного шаблона соответствующего типа
