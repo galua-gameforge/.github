@@ -1,8 +1,8 @@
 # galua-gameforge
 
-We develop browser games for desktop and mobile devices
+We create browser games for desktop/tablet/mobile devices.
 
-The games run in modern browsers and integrate with the Yandex Games platform
+Our games present on the Yandex.Games platform
 
 ## Technologies
 
