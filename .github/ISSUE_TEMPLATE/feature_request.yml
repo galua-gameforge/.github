@@ -1,0 +1,95 @@
+name: Предложение по улучшению
+description: Предложите новую возможность или улучшение игры, библиотеки либо инфраструктуры
+title: "[Предложение]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Опишите задачу с точки зрения пользы и ожидаемого результата
+
+        Перед созданием предложения проверьте, что похожая задача ещё не существует
+
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: Тип проекта
+      options:
+        - Игра
+        - Библиотека
+        - Общая инфраструктура
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Проблема
+      description: Какую потребность пользователя или разработчика должно закрыть изменение
+      placeholder: Сейчас сложно или невозможно ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Предлагаемое решение
+      description: Опишите желаемое поведение и основной сценарий использования
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Область
+      multiple: true
+      options:
+        - Игровая механика
+        - Бонусы и баланс
+        - Интерфейс и управление
+        - Локализация и ресурсы
+        - Интеграция с Яндекс Играми
+        - Публичный API библиотеки
+        - Сборка и выпуск
+        - Документация
+        - Другое
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Пример использования
+      description: При необходимости добавьте пример интерфейса, кода, ресурсного файла или пользовательского сценария
+      render: text
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Рассмотренные альтернативы
+      description: Какие другие варианты вы рассматривали и почему они не подходят
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии готовности
+      description: Перечислите проверяемые условия, по которым можно принять результат
+      placeholder: |
+        - [ ] Реализован основной сценарий
+        - [ ] Добавлены или обновлены тесты
+        - [ ] Обновлена документация
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Дополнительный контекст
+      description: Добавьте ссылки, макеты, скриншоты или связанные задачи
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Предварительная проверка
+      options:
+        - label: Я проверил существующие задачи и не нашёл дубликат
+          required: true
